@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+
+<title>Insert title here</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/misestilos.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/scriptgals.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<div class="row" id="titulo">
+			<div class="col-md-4">
+				<img alt="logo de galp"
+					src="http://preciogas.com/sites/all/themes/images/galp200_renovado.png"
+					height="100">
+			</div>
+			<div class="col-md-8 text-center" id="titulo1">
+				<h1><b>BIENVENIDO A GALP ELVAS-BADAJOZ</b></h1>
+			</div>
+		</div>
+	</header>
+ 		<h2 class="col-md-12 text-center" ><b>EIGE LA FORMA DE PAGO</b></h2>
+	<br><br>
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<button id="tarjeta">PAGO CON TARJETA</button>
+		</div>
+		<div class="col-md-4 text-center">
+			<button id="efectivo">PAGO EN EFECTIVO</button>
+		</div>
+		<div class="col-md-4 text-center">
+			<button id="cancelar">CANCELAR</button>
+		</div>
+	</div>
+	
+	<form class="tarjeta text-center" id= "trj" action="Validar" method="post" style="display: none;">
+		<h4>TARJETA</h4>
+	
+			<input name="usuario" type="text" placeholder="NOMBRE DEL CLIENTE"><br>
+			<input name="matricula" type="text" placeholder="matricula del vehiculo"><br>
+			<input name="numero-tarjeta" type="text" placeholder="numero de tarjeta"><br>
+			<input name="pago" type="number" placeholder="importe a repostar"><br>
+			<input name="enviar" type="submit" value="Aceptar"><br>
+	</form>
+	<form class="efectivo text-center" id="efc"  action="Validar" method="post" style="display: none">
+		<h4>EFECTIVO</h4>
+	
+			<input name="usuario" type="text" placeholder="NOMBRE DEL CLIENTE"><br>
+			<input name="matricula" type="text" placeholder="matricula del vehiculo"><br>
+			<input name="pago" type="number" placeholder="importe a repostar"><br>
+			<input name="enviar" type="submit" value="Aceptar"><br>
+	</form>
+	
+</body>
+</html>

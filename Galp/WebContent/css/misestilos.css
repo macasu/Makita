@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	background-color: #ffcc6c;
+}
+
+#titulo{
+	background-color: orange;
+}
+#titulo1{
+	margin: ;
+}
+.tarjeta{
+	display: none;
+}
+.efectivo{
+	display: none;
+}
+.mostrar{
+	display: block;
+}
+#uno{
+	text-align:center;
+}
